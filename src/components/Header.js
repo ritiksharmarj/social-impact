@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import UserImage from '../assets/Jim Moody.jpg';
+// import UserImage from '../assets/Jim Moody.jpg';
 
 const Header = () => (
   <header className='mx-auto max-w-3xl sm:px-6'>
     <div className='flex items-center justify-between px-4 sm:px-0 py-4 border-b border-gray-200'>
       {/* User */}
       <Link to='/'>
-        <img className='w-10 h-10 rounded-full' src={UserImage} alt='' />
+        <img
+          className='w-10 h-10 rounded-full'
+          src='https://styles.redditmedia.com/t5_2qimj/styles/communityIcon_cxdvjvs58ria1.png'
+          alt=''
+        />
       </Link>
 
       {/* Create complaint */}
-      <Link to='/'>
+      <Link to='/complaint'>
         <div className='flex items-center justify-center gap-1 bg-blue-500 hover:bg-blue-600 text-white transition py-2 px-4 rounded-full sm:w-60 w-44'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
