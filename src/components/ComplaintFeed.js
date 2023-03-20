@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import { SupaContext, SupaProvider } from '../SupaContext';
+import React from 'react';
+// import { SupaContext, SupaProvider } from '../SupaContext';
 
 // import fakeUser from '../json/fake.json';
 // import { fetchUser } from '../utils/fetchUser';
@@ -51,8 +51,7 @@ const ComplaintFeed = ({ complaintUserData, setComplaintUserData }) => {
   // useEffect(async () => {
   //   setComplaintUserData(await complaintDetails);
   // }, [])
-  
-  
+
   console.log(complaintUserData);
   return (
     <>
