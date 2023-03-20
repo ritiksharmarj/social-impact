@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import ComplaintFeed from '../components/ComplaintFeed';
 
 const Home = () => {
-  return <div>Home</div>;
+  const [complaintUserData, setComplaintUserData] = useState([]);
+
+  return (
+    <ComplaintFeed
+      complaintUserData={complaintUserData}
+      setComplaintUserData={setComplaintUserData}
+    />
+  );
 };
 
 export default Home;
