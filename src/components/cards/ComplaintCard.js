@@ -12,7 +12,7 @@ const ComplaintCard = ({ singleData }) => {
         />
         <div className='w-full flex items-center justify-between'>
           <div>
-            <h3 className='font-semibold'>{singleData.user_id}</h3>
+            <h3 className='font-semibold'>@{singleData.user_id}</h3>
             <p className='text-slate-400 text-sm'>Human</p>
           </div>
           <Link to='/'>
