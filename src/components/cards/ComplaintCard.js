@@ -6,9 +6,10 @@ const ComplaintCard = ({ singleData }) => {
     <div className='w-full border border-gray-200 rounded-xl p-4'>
       <div className='flex items-center gap-4'>
         <img
-          className='w-12 h-12 rounded-full'
-          src={singleData.profile_image}
+          className='w-12 h-12 rounded-full border-2 border-gray-200'
+          src={`https://robohash.org/${singleData.user_id}`}
           alt=''
+          loading='lazy'
         />
         <div className='w-full flex items-center justify-between'>
           <div>
