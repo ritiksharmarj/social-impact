@@ -78,7 +78,7 @@ const Complaint = () => {
           <div className="flex items-center justify-center w-full">
             <label
               htmlFor='upload-file'
-              className='flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600'
+              className='flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 '
             >
               <div className="flex flex-col items-center justify-center pt-5 pb-6">
                 <svg
@@ -122,7 +122,7 @@ const Complaint = () => {
           <div>
             <label
               htmlFor='message'
-              className='block mb-2 text font-medium text-gray-900 dark:text-white'
+              className='block mb-2 text font-medium text-gray-900 '
             >
               Description
             </label>
@@ -138,13 +138,13 @@ const Complaint = () => {
           <div>
             <label
               htmlFor='categories'
-              className='block mb-2 font-medium text-gray-900 dark:text-white'
+              className='block mb-2 font-medium text-gray-900 '
             >
               Select a category
             </label>
             <select
               id='categories'
-              className='bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+              className='bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
               required
             >
               <option defaultValue>Choose a category</option>
@@ -158,7 +158,7 @@ const Complaint = () => {
           <div>
             <label
               htmlFor='complaint-location'
-              className='block mb-2 font-medium text-gray-900 dark:text-white'
+              className='block mb-2 font-medium text-gray-900 '
             >
               Add location
             </label>
