@@ -7,7 +7,9 @@ const Home = () => {
   const [complaintUserData, setComplaintUserData] = useState([]);
 
   const {complaintDetails} = useContext(SupaContext);
-  // setComplaintUserData(complaintDetails);
+
+  //For testing purpose, will be removed when authentication applied
+  localStorage.setItem('loggedIn_user_id', "ritik_sharma");
 
   return (
     <ComplaintFeed
