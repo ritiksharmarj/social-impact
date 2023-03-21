@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import UserImage from '../assets/Jim Moody.jpg';
+import Logo from '../assets/real-impact.svg';
 
 const Header = () => (
   <header className='sticky top-0 z-30 bg-white bg-opacity-50 backdrop-blur backdrop-filter'>
@@ -10,9 +10,9 @@ const Header = () => (
         {/* User */}
         <Link to='/'>
           <img
-            className='w-10 h-10 rounded-full'
-            src='https://styles.redditmedia.com/t5_2qimj/styles/communityIcon_cxdvjvs58ria1.png'
-            alt=''
+            className='w-10 h-10 rounded-full fill-blue-500 text-blue-500'
+            src={Logo}
+            alt='logo'
           />
         </Link>
 

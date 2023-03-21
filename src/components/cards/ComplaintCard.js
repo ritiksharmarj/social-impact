@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ComplaintCard = ({ singleData }) => {
   return (
-    <div className='w-full border border-gray-200 rounded-xl p-4'>
-      <div className='flex items-center gap-4'>
+    <div className='w-full border border-gray-200 rounded-xl p-4 overflow-hidden'>
+      <div className='flex items-center sm:gap-4 gap-2'>
         <img
           className='w-12 h-12 rounded-full border-2 border-gray-200'
           src={`https://robohash.org/${singleData.user_id}`}
@@ -12,12 +12,12 @@ const ComplaintCard = ({ singleData }) => {
           loading='lazy'
         />
         <div className='w-full flex items-center justify-between'>
-          <div>
+          <div className='w-32 sm:w-60 overflow-hidden'>
             <h3 className='font-semibold'>@{singleData.user_id}</h3>
             <p className='text-slate-400 text-sm'>Human</p>
           </div>
           <Link to='/'>
-            <div className='text-sm border hover:border-blue-500 hover:bg-blue-50 active:text-white active:bg-blue-500 py-1 px-4 rounded-full transition'>
+            <div className='text-sm border hover:border-blue-500 hover:bg-blue-50 active:text-white active:bg-blue-500 py-1 sm:px-4 px-3 rounded-full transition'>
               Follow
             </div>
           </Link>
@@ -34,7 +34,7 @@ const ComplaintCard = ({ singleData }) => {
       </div>
 
       <div className='flex items-center justify-between mt-3'>
-        <div className='flex items-center gap-12'>
+        <div className='flex items-center sm:gap-12 gap-8'>
           <Link className='flex items-center gap-1' to='/'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
